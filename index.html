@@ -1,0 +1,383 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CE2 2026 2027 · 学生离线版</title><style>
+
+
+:root{--navy:#0b2f5b;--red:#e5232e;--sky:#d9ecff;--ink:#1f2937;--muted:#667085;--line:#d7e4f2;--zh:KaiTi,STKaiti,"Noto Serif SC",serif;--py:Mulish,Arial,sans-serif;--fr:Calibri,Arial,sans-serif}*{box-sizing:border-box}img{max-width:100%;height:auto;display:block}body{margin:0;background:#f5f9ff;color:var(--ink);font-family:var(--fr)}button,input,select{font:inherit}button{border:0;border-radius:16px;background:var(--navy);color:#fff;padding:12px 16px;min-height:48px;font-weight:800;cursor:pointer;box-shadow:0 6px 0 #071f3d}.red{background:var(--red);box-shadow:0 6px 0 #9c141c}.light{background:#fff;color:var(--navy);border:2px solid var(--navy);box-shadow:0 5px 0 #b9cce2}.top{position:sticky;top:0;z-index:20;background:white;border-bottom:6px solid var(--red);box-shadow:0 6px 22px #0b2f5b18}.bar{max-width:1380px;margin:auto;display:grid;grid-template-columns:auto 1fr auto;gap:16px;align-items:center;padding:12px 18px}.logo{width:112px;height:auto}.top-actions{display:flex;gap:10px;align-items:center;justify-content:flex-end;flex-wrap:wrap}.back-to-lms{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border-radius:14px;background:var(--red);color:white;text-decoration:none;font-weight:900;box-shadow:0 5px 0 #9c141c}.brand{font-family:var(--zh);font-size:30px;color:var(--red);font-weight:900}.version-badge{display:inline-block;margin-left:10px;padding:5px 10px;border-radius:999px;background:var(--sky);color:var(--navy);font-family:Calibri,Arial;font-size:16px;vertical-align:middle}.title{font-size:24px;color:var(--navy);font-weight:900}.nav{display:flex;gap:8px;overflow:auto;padding:10px 18px;background:#f9fcff}.nav button{white-space:nowrap;box-shadow:none;min-height:40px;padding:9px 12px}.nav .active{background:var(--red)}main{max-width:1380px;margin:auto;padding:20px}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.panel,.card{background:white;border:2px solid var(--line);border-radius:26px;padding:22px;box-shadow:0 14px 34px #0b2f5b12}.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}.c12{grid-column:span 12}.hero{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}.cover{width:100%;height:min(62vh,620px);aspect-ratio:4/3;object-fit:contain;border-radius:24px;background:white;padding:4px;border:4px solid var(--sky);transform-origin:center bottom;animation:coverCartoon 10s cubic-bezier(.45,0,.25,1) infinite;will-change:transform,filter;backface-visibility:hidden}.hero{perspective:1200px}@keyframes coverCartoon{0%,100%{transform:perspective(1000px) translateY(0) scale(1) rotateY(0deg) rotateZ(0deg);filter:saturate(1) brightness(1)}12%{transform:perspective(1000px) translateY(16px) scale(.985) rotateY(0deg) rotateZ(0deg);filter:saturate(1.03) brightness(1.01)}24%{transform:perspective(1000px) translateY(-34px) scale(1.035) rotateY(0deg) rotateZ(0deg);filter:saturate(1.12) brightness(1.05)}38%{transform:perspective(1000px) translateY(-24px) scale(1.035) rotateY(-13deg) rotateZ(-1deg);filter:saturate(1.1) brightness(1.04)}52%{transform:perspective(1000px) translateY(-24px) scale(1.035) rotateY(13deg) rotateZ(1deg);filter:saturate(1.1) brightness(1.04)}66%{transform:perspective(1000px) translateY(-12px) scale(1.02) rotateY(-6deg) rotateZ(-.5deg);filter:saturate(1.08) brightness(1.03)}80%{transform:perspective(1000px) translateY(-26px) scale(1.025) rotateY(6deg) rotateZ(.5deg);filter:saturate(1.08) brightness(1.03)}90%{transform:perspective(1000px) translateY(0) scale(1.01) rotateY(0deg) rotateZ(0deg);filter:saturate(1.04) brightness(1.02)}}@media (prefers-reduced-motion:reduce){.cover{animation:none}}.zh{font-family:var(--zh);font-size:46px;color:#8b1e24;line-height:1.25;cursor:pointer}.py{font-family:var(--py);font-size:23px;color:#3f4855}.fr{font-family:Calibri,Arial,sans-serif;font-size:24px;color:var(--navy)}.inline-fr{font-size:inherit;color:var(--navy);font-family:Calibri,Arial,sans-serif}.en{font-family:Calibri,Arial,sans-serif;font-size:22px;color:#176b45}.h1{font-family:var(--zh);font-size:76px;color:#8b1e24;margin:0}.h2{font-family:var(--zh);font-size:52px;color:var(--navy);margin:0 0 12px}.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.lesson-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}.lesson-card{text-align:left;background:#fff;color:var(--navy);box-shadow:none;border:2px solid var(--line);height:100%}.lesson-card img{width:100%;height:160px;object-fit:contain;border-radius:14px;background:#fff;border:2px solid var(--sky);padding:4px}
+
+
+.feature-char{color:#0052a5!important;background:#dff1ff;border:3px solid #68b7e8;border-radius:12px;padding:0 .08em;box-shadow:0 4px 0 #082f6322;font-weight:900}.write-mini.featured,.write-focus.featured{border-color:#0052a5!important;box-shadow:0 0 0 6px #dff1ff}.write-mini.featured .zh,.featured-title{color:#0052a5!important}.feature-badge{display:inline-flex;align-items:center;gap:8px;background:#dff1ff;color:#0052a5;border:2px solid #68b7e8;border-radius:999px;padding:8px 13px;font-weight:900}
+
+
+.reading-card{border-left:12px solid var(--red);margin:14px 0}.reading-card .zh{font-size:44px;line-height:1.22}.ai-record .zh{font-size:42px}.reading-card.current{background:#fff7f7;transform:scale(1.01)}.avatar{display:inline-flex;align-items:center;justify-content:center;min-width:72px;max-width:220px;min-height:44px;border-radius:999px;background:var(--sky);color:var(--navy);font-weight:900;margin-right:12px;padding:7px 13px;font-size:20px;line-height:1.1;white-space:normal;text-align:center;vertical-align:middle}.vocab{display:grid;grid-template-columns:minmax(280px,.8fr) minmax(320px,1.2fr);gap:22px;align-items:center}.vocab>*{min-width:0}.wordbig{min-width:0}.vocab-list{display:grid;grid-template-columns:repeat(auto-fill,132px);gap:10px;margin-top:16px;align-items:start}.vocab-chip{box-sizing:border-box;width:132px;height:96px;border:2px solid var(--sky);background:#fff;color:var(--navy);border-radius:16px;padding:8px;display:grid;grid-template-rows:60px 20px;gap:4px;place-items:center;min-width:132px;max-width:132px;overflow:hidden}.vocab-chip.active{border-color:#0052a5;background:#dff1ff;box-shadow:0 0 0 4px #dff1ff}.vocab-chip .zh{box-sizing:border-box;font-size:var(--chip-zh,30px);line-height:1;width:112px;height:60px;padding:0 2px;display:flex;align-items:center;justify-content:center;white-space:normal;overflow-wrap:anywhere;word-break:break-all;text-align:center;overflow:hidden;letter-spacing:0}.vocab-chip small{font-family:var(--py);font-size:10px;color:#444;line-height:1;width:112px;height:20px;display:flex;align-items:center;justify-content:center;overflow:hidden;overflow-wrap:anywhere;text-align:center}.vocab-credit{font-size:12px;color:#4b6280;text-align:center;margin-top:8px}.vocab-art{background:#fff;border:4px solid var(--sky);box-shadow:0 12px 28px #082f6320;object-fit:contain}.blur{position:relative}.blur:after{content:"点击显示 / Clique";position:absolute;right:16px;bottom:16px;background:#fff;color:var(--navy);border:2px solid var(--sky);border-radius:999px;padding:8px 13px;font-weight:900}.blur.reveal:after{display:none}.wordbig .zh{font-size:clamp(48px,6.4vw,86px);line-height:1.08;white-space:normal;overflow-wrap:anywhere;word-break:break-all;max-width:100%}.image-full{width:100%;height:min(52vh,560px);object-fit:contain;border-radius:24px;border:4px solid var(--sky);background:white;display:block;aspect-ratio:4/3;padding:4px}.blur img{filter:blur(16px);transition:.4s}.blur.reveal img{filter:none}
+
+
+.vocab-art{background:#fff;border:4px solid var(--sky);box-shadow:0 12px 28px #082f6320;object-fit:contain}.blur{position:relative}.blur:after{content:"点击显示 / Clique";position:absolute;right:16px;bottom:16px;background:#fff;color:var(--navy);border:2px solid var(--sky);border-radius:999px;padding:8px 13px;font-weight:900}.blur.reveal:after{display:none}
+
+
+.match{display:grid;grid-template-columns:1fr 1fr;gap:20px}.stack{display:grid;gap:12px}.word-card,.pic-card,.char-card{background:white;border:3px solid var(--sky);border-radius:20px;padding:16px;text-align:center;min-height:92px;display:flex;align-items:center;justify-content:center;cursor:pointer}.word-card{font-family:var(--zh);font-size:clamp(28px,3.6vw,42px);line-height:1.12;color:#8b1e24;white-space:normal;overflow-wrap:anywhere;word-break:break-all;min-width:0}.pic-card{aspect-ratio:4/3;overflow:hidden}.pic-card img{width:100%;height:100%;max-height:190px;object-fit:contain;background:#fff;border-radius:14px;padding:3px}.pic-card-image{width:100%;display:grid;gap:8px;place-items:center}.pic-card-image img{width:100%;height:180px;object-fit:contain;border-radius:14px;background:#fff}.pic-card-image strong{font-family:var(--zh);font-size:clamp(24px,2.8vw,36px);line-height:1.1;color:#8b1e24}.selected{outline:6px solid #f6ce46}.gone{visibility:hidden}.shake{animation:shake .35s}.thumbs,.win{position:fixed;inset:0;display:none;align-items:center;justify-content:center;z-index:99;background:#ffffffcc}.thumbs{font-size:150px}.win{font-family:var(--zh);font-size:100px;color:white;background:linear-gradient(135deg,var(--navy),var(--red));text-shadow:0 8px 0 #0006}.show{display:flex;animation:pop .75s}.drop{min-height:110px;border:4px dashed var(--sky);border-radius:22px;display:flex;align-items:center;justify-content:center;background:#f8fbff}.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;align-items:stretch}.word-pair-board{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;margin-top:16px}.word-pair-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}.word-pair-col{position:relative;z-index:2;display:grid;gap:14px}.pair-card{background:#fff;border:3px solid var(--sky);border-radius:20px;min-height:82px;padding:12px 16px;display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer;box-shadow:0 8px 18px #0b2f5b12}.pair-card .zh{font-size:clamp(28px,3vw,42px);line-height:1.08}.pair-card .fr{font-size:clamp(18px,2vw,26px);line-height:1.16}.pair-card.active{outline:6px solid #f6ce46}.pair-card.matched{background:#dff5ec;border-color:#21a366;color:#075f34}.pair-card.matched .zh{color:#075f34}.pair-card.wrong{animation:shake .35s}.pair-line{stroke:#21a366;stroke-width:7;stroke-linecap:round;filter:drop-shadow(0 3px 2px #0b2f5b30)}@media(max-width:900px){.word-pair-board{grid-template-columns:1fr;gap:24px}.word-pair-lines{display:none}}.ifs{position:fixed;right:16px;bottom:12px;width:88px;height:auto;opacity:.9}.record{border:2px dashed var(--red);background:#fff9f9;border-radius:22px;padding:16px;margin-top:18px}.write-layout{display:grid;grid-template-columns:.75fr 1.25fr;gap:20px}.write-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.write-mini{background:#fff;color:var(--navy);border:2px solid var(--line);box-shadow:none;min-height:104px;padding:8px;display:flex;flex-direction:column;align-items:center;justify-content:center}.write-mini.active{border-color:var(--red);background:#fff7f7}.write-mini .zh{font-size:42px}.write-mini small{font-family:var(--py);font-size:16px}.write-focus{text-align:center}.write-meta{display:flex;gap:10px;justify-content:center;align-items:center;margin-bottom:10px}.badge{display:inline-block;border-radius:999px;padding:6px 12px;background:var(--sky);color:var(--navy);font-weight:900}.tianzi{width:min(360px,80vw);aspect-ratio:1;margin:10px auto;border:4px solid var(--navy);border-radius:18px;background:linear-gradient(90deg,transparent 49.5%,#d7e4f2 49.5%,#d7e4f2 50.5%,transparent 50.5%),linear-gradient(0deg,transparent 49.5%,#d7e4f2 49.5%,#d7e4f2 50.5%,transparent 50.5%),linear-gradient(45deg,transparent 49.5%,#edf3fb 49.5%,#edf3fb 50.5%,transparent 50.5%),linear-gradient(-45deg,transparent 49.5%,#edf3fb 49.5%,#edf3fb 50.5%,transparent 50.5%),#fff;display:grid;place-items:center}.tianzi span{font-family:var(--zh);font-size:180px;color:#8b1e24}.stroke-panel{border:2px dashed var(--sky);border-radius:18px;padding:14px;margin-top:14px;background:#f8fbff}.stroke-step{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:999px;background:var(--navy);color:white;font-weight:900;margin:5px}.stroke-link{display:inline-flex;margin-top:10px;color:white;background:var(--red);border-radius:14px;padding:10px 14px;text-decoration:none;font-weight:900}
+
+
+.tianzi{position:relative;overflow:hidden;width:min(430px,84vw);aspect-ratio:1;margin:10px auto;border:4px solid var(--navy);border-radius:18px;background:linear-gradient(90deg,transparent 49.5%,#d7e4f2 49.5%,#d7e4f2 50.5%,transparent 50.5%),linear-gradient(0deg,transparent 49.5%,#d7e4f2 49.5%,#d7e4f2 50.5%,transparent 50.5%),linear-gradient(45deg,transparent 49.5%,#edf3fb 49.5%,#edf3fb 50.5%,transparent 50.5%),linear-gradient(-45deg,transparent 49.5%,#edf3fb 49.5%,#edf3fb 50.5%,transparent 50.5%),#fff;display:block}.tianzi svg{width:100%;height:100%;display:block}.model-char{display:none}.radical-mark{display:none}.stroke-line{fill:none;stroke:#082f63;stroke-width:13;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:260;stroke-dashoffset:260;animation:drawStroke .72s ease forwards;animation-play-state:running}.stroke-num{font-family:Calibri,Arial,sans-serif;font-size:18px;font-weight:900;fill:#fff;paint-order:stroke;stroke:#082f63;stroke-width:5px;stroke-linejoin:round;opacity:0;animation:showNum .2s ease forwards}.write-paused .stroke-line,.write-paused .stroke-num{animation-play-state:paused}.stroke-dot{fill:#d8202f;opacity:.92}.write-actions{justify-content:center}.radical-chip{display:inline-flex;gap:8px;align-items:center;border:2px solid #148a4f;background:#e9f8ef;color:#075f34;border-radius:999px;padding:8px 13px;font-weight:900}.radical-chip .zh{font-size:32px;color:#148a4f}.origin-card{margin-top:14px;background:#fffdf7;border:2px solid #f1cf72;border-radius:18px;padding:14px;text-align:left;line-height:1.65}.origin-card b{color:var(--red)}.origin-card .zh-note{font-size:1.04em;line-height:1.68}.origin-card span.fr{font-size:.78em;line-height:1.45;display:inline-block}
+
+
+.real-stroke{fill:#082f63;opacity:0;animation:showStroke .42s ease forwards}.real-stroke.radical-stroke{fill:#148a4f}.stroke-num.real-num{font-size:54px;fill:#fff;stroke:#082f63;stroke-width:14px;paint-order:stroke;opacity:0;animation:showNum .18s ease forwards}.stroke-num.radical-num{stroke:#148a4f}.stroke-shadow{fill:none;stroke:#d7e4f2;stroke-width:12;stroke-linecap:round;opacity:.35}.hanzi-real .model-char{display:none}.hanzi-real .radical-mark{display:none}.write-paused .real-stroke,.write-paused .real-num{animation-play-state:paused}@keyframes showStroke{to{opacity:1}}
+
+
+@keyframes drawStroke{to{stroke-dashoffset:0}}@keyframes showNum{to{opacity:1}}@media(max-width:900px){.tianzi{width:min(360px,86vw)}.model-char{font-size:210px}}
+
+
+.practice-box{margin-top:14px}.write-input{font-size:34px;text-align:center;font-family:var(--zh)}@media(max-width:900px){.write-layout{grid-template-columns:1fr}.write-grid{grid-template-columns:repeat(4,1fr)}.tianzi span{font-size:130px}}.ai-feedback{background:#fff;border:2px solid var(--sky);border-radius:18px;padding:16px;line-height:1.7}.ai-line{background:#f7fbff;border-radius:14px;padding:10px 14px;margin:10px 0}.ai-record h3{font-size:28px;color:var(--navy);margin:0 0 10px}@keyframes shake{25%{transform:translateX(-12px)}50%{transform:translateX(12px)}75%{transform:translateX(-8px)}}@keyframes pop{from{transform:scale(.5);opacity:0}to{transform:scale(1);opacity:1}}@media(max-width:900px){.bar,.hero,.vocab,.match{grid-template-columns:1fr}.c4,.c5,.c6,.c7,.c8,.c12{grid-column:span 12}.h1{font-size:54px}.zh{font-size:36px}.wordbig .zh{font-size:clamp(44px,10vw,62px)}.vocab-list{grid-template-columns:repeat(auto-fill,126px)}.vocab-chip{width:126px;min-width:126px;max-width:126px;height:92px;grid-template-rows:55px 21px}.vocab-chip .zh{width:106px;height:55px;font-size:var(--chip-zh,28px)}.vocab-chip small{width:106px;height:21px;font-size:10px}}
+
+
+.order-board{display:grid;grid-template-columns:minmax(360px,.95fr) minmax(420px,1.05fr);gap:18px;align-items:start}.order-panel{min-height:62vh;max-height:74vh;overflow:auto;padding:16px}.order-target-panel{border-color:var(--red)}.order-source,.order-target{gap:10px}.order-card{padding:12px 14px;border-radius:18px;box-shadow:none;cursor:grab}.order-card:active{cursor:grabbing}.order-card .zh{display:block;font-size:clamp(24px,2.2vw,34px);line-height:1.14;white-space:normal;overflow-wrap:anywhere;word-break:break-all}.order-card .py{font-size:16px;line-height:1.15}.order-card .fr{font-size:17px;line-height:1.15}.order-head{display:flex;align-items:center;gap:8px;margin-bottom:6px}.order-head .avatar{min-width:42px;min-height:34px;font-size:18px;margin-right:0;padding:5px 9px}.order-head .mini{font-size:15px;color:var(--navy);font-weight:900}.order-head button{min-height:34px;padding:6px 9px;border-radius:11px;box-shadow:none}.order-card-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}.order-card-actions button{min-height:34px;padding:6px 10px;border-radius:11px;box-shadow:none;font-size:16px}.order-empty{min-height:180px;font-size:24px;text-align:center}.order-drop-active{background:#fff7f7!important;outline:4px dashed var(--red)}@media(max-width:900px){.order-board{grid-template-columns:1fr}.order-panel{max-height:none}.order-card .zh{font-size:28px}}.student-portal{margin-top:18px;border:3px solid var(--navy);background:#ffffff}.student-form{display:grid;grid-template-columns:repeat(3,minmax(160px,1fr));gap:12px;margin:12px 0}.student-form input,.student-form select{width:100%;border:2px solid var(--line);border-radius:14px;padding:12px 14px;font-size:22px}.student-paths{display:grid;grid-template-columns:repeat(3,minmax(190px,1fr));gap:14px;margin-top:14px}.student-path{background:#f8fbff;color:var(--navy);border:3px solid var(--sky);box-shadow:none;text-align:left;padding:18px;min-height:150px}.student-path b{display:block;font-family:var(--zh);font-size:34px;color:#8b1e24;margin-bottom:6px}.student-path span{display:block;font-size:22px;line-height:1.25}.student-route{display:inline-flex;align-items:center;gap:8px;border-radius:999px;background:#dff1ff;color:var(--navy);font-weight:900;padding:7px 12px;margin:5px 5px 0 0}@media(max-width:900px){.student-form,.student-paths{grid-template-columns:1fr}}.teacher-tools{display:grid;grid-template-columns:repeat(2,minmax(260px,1fr));gap:16px}.teacher-tool{background:#f8fbff;border:3px solid var(--sky);color:var(--navy);text-align:left;min-height:170px}.teacher-tool b{display:block;font-family:var(--zh);font-size:34px;color:#8b1e24;margin-bottom:8px}.teacher-slide-shell{min-height:calc(100vh - 170px)}.teacher-slide-card{background:#fff;border:4px solid var(--navy);border-radius:24px;padding:28px;min-height:58vh;display:grid;grid-template-columns:1fr .42fr;gap:22px;align-items:stretch}.teacher-slide-main{display:flex;flex-direction:column;justify-content:center;gap:16px}.teacher-slide-title{font-family:Calibri,Arial,sans-serif;font-size:clamp(34px,4vw,58px);font-weight:900;color:var(--navy)}.teacher-slide-focus{font-family:var(--zh);font-size:clamp(34px,5vw,76px);color:#8b1e24;line-height:1.08}.teacher-slide-lines{display:grid;gap:10px}.teacher-slide-line{border:2px solid var(--line);background:#f8fbff;border-radius:16px;padding:10px 14px;font-family:var(--zh);font-size:clamp(24px,3vw,44px);line-height:1.12;color:#8b1e24;text-align:left}.teacher-slide-side{background:#eef8ff;border-radius:18px;padding:18px;display:flex;flex-direction:column;justify-content:space-between}.teacher-slide-count{font-weight:900;color:var(--navy);font-size:24px}.teacher-slide-task{font-size:24px;line-height:1.25;color:var(--navy)}.teacher-slide-thumbs{display:grid;grid-template-columns:repeat(auto-fill,minmax(54px,1fr));gap:8px;margin-top:14px}.teacher-slide-thumbs button{min-height:42px;border-radius:12px;padding:4px;font-size:16px;box-shadow:none}.teacher-slide-thumbs button.active{background:var(--red)}@media(max-width:900px){.teacher-tools,.teacher-slide-card{grid-template-columns:1fr}.teacher-slide-card{min-height:auto}.teacher-slide-line{font-size:30px}}
+
+
+/* Keep full Chinese vocabulary text visible in 我来认 word cards */
+
+
+.vocab-chip .zh{white-space:nowrap!important;word-break:keep-all!important;overflow-wrap:normal!important;overflow:visible!important;line-height:1.08!important;max-width:112px!important;text-align:center!important}.vocab-chip{overflow:hidden!important}.vocab-chip small{white-space:nowrap!important;text-overflow:ellipsis!important}
+
+
+@media(max-width:900px){.vocab-chip .zh{max-width:106px!important}}
+
+
+
+
+
+/* Global pinyin font normalization 2026-07-05 */
+
+
+.py,.pinyin,[class*="pinyin"],.read-py,.order-card .py,.dialogue-line .py,.target-card .py{font-family:Mulish,Calibri,Arial,sans-serif!important;}
+
+
+
+
+
+/* Clean stroke animation shadows, Mulish pinyin, and image fit 2026-07-05 */
+
+
+.model-char,.teacher-model-char{display:none!important;fill:transparent!important;opacity:0!important}
+
+
+.py,.pinyin,.read-py,.read-card .py,.target-card .py,.dialogue-line .py,.order-card .py,.char-teach-info .pinyin,.vocab-chip small,.write-mini small,.char-mini span,[class*="py"],[class*="pinyin"]{font-family:Mulish,Calibri,Arial,sans-serif!important}
+
+
+.target-card,.char-match[data-side="right"],.find-choice,.teacher-stroke-num,.stroke-num{font-family:Mulish,Calibri,Arial,sans-serif!important}
+
+
+.image-full,.vocab-art,.pic-card img,.blur img,.picture-card img,.option-picture img,.cover-art img,.observe-grid img{object-fit:contain!important;max-width:100%!important;max-height:100%!important;width:100%!important;height:100%!important}
+
+
+.pic-card,.blur,.picture-card,.option-picture,.cover-art{overflow:hidden!important;display:grid!important;place-items:center!important}
+
+
+.pic-card img,.blur img,.picture-card img,.option-picture img{display:block!important}
+
+
+
+
+
+/* Fix teacher entry image overlay 2026-07-18 */
+
+
+.hero{position:relative;isolation:isolate;overflow:visible;}
+
+
+.hero>div:first-child,.toolbar,.teacher-tools,.teacher-tool,.top,.nav{position:relative;z-index:5;}
+
+
+.cover{position:relative;z-index:1;max-width:100%;}
+
+
+.teacher-tools{isolation:isolate;}
+
+
+.teacher-tool{pointer-events:auto;}
+
+
+
+
+
+/* Fix 我来认 vocabulary chip text fitting 2026-07-18 */
+
+
+.wordbig .vocab-list .vocab-chip .zh,
+
+
+.vocab-chip .zh{
+
+
+  font-family:var(--zh)!important;
+
+
+  font-size:var(--chip-zh,30px)!important;
+
+
+  line-height:1.04!important;
+
+
+  width:112px!important;
+
+
+  height:60px!important;
+
+
+  max-width:112px!important;
+
+
+  display:flex!important;
+
+
+  align-items:center!important;
+
+
+  justify-content:center!important;
+
+
+  text-align:center!important;
+
+
+  white-space:nowrap!important;
+
+
+  word-break:keep-all!important;
+
+
+  overflow:hidden!important;
+
+
+  padding:0 2px!important;
+
+
+  letter-spacing:0!important;
+
+
+}
+
+
+.wordbig .vocab-list .vocab-chip small,
+
+
+.vocab-chip small{
+
+
+  font-family:Mulish,Calibri,Arial,sans-serif!important;
+
+
+  width:112px!important;
+
+
+  height:20px!important;
+
+
+  font-size:10px!important;
+
+
+  line-height:1!important;
+
+
+  white-space:nowrap!important;
+
+
+  overflow:hidden!important;
+
+
+  text-overflow:ellipsis!important;
+
+
+}
+
+
+@media(max-width:900px){
+
+
+  .wordbig .vocab-list .vocab-chip .zh,.vocab-chip .zh{width:106px!important;height:55px!important;max-width:106px!important;}
+
+
+  .wordbig .vocab-list .vocab-chip small,.vocab-chip small{width:106px!important;height:21px!important;}
+
+
+}
+
+
+.game-sections{display:grid;grid-template-columns:repeat(2,minmax(280px,1fr));gap:14px;margin-bottom:16px}.game-section{box-shadow:none;padding:16px;border-radius:18px}.game-section h3{margin:0 0 8px;font-family:var(--zh);font-size:32px;color:var(--navy)}.game-section .toolbar{margin:0}@media(max-width:900px){.game-sections{grid-template-columns:1fr}}.teacher-courseware-menu{position:relative;z-index:6;margin-bottom:16px}.teacher-courseware-menu .teacher-tools{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.teacher-courseware-menu .teacher-tool{min-height:128px}.teacher-courseware-menu .teacher-tool.active{background:#dff1ff;border-color:var(--navy);box-shadow:0 0 0 4px #dff1ff}.teacher-courseware-frame{margin-top:16px}</style><style id="preciseBrushWritingStyles">
+
+
+/* A shared SVG viewport keeps the nib, trace and model aligned at every size. */
+
+
+.write-layout{grid-template-columns:minmax(220px,.55fr) minmax(0,1.45fr)}
+
+
+.write-focus,.writing-demo-column{min-width:0}
+
+
+.write-focus .write-input{width:100%;max-width:100%;min-width:0}
+
+
+.write-meta{flex-wrap:wrap}
+
+
+.write-demo-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.92fr);gap:26px;align-items:start;margin:18px auto 0;padding-top:48px}
+
+
+.writing-demo-column{padding-top:0}
+
+
+.tianzi.hanzi-brush{width:100%;max-width:360px;overflow:visible;margin:0 auto;isolation:isolate}
+
+
+.writing-surface{display:block;width:100%;height:100%;overflow:visible;user-select:none;-webkit-user-select:none}
+
+
+.writing-brush-tip{pointer-events:none}
+
+
+.writing-brush-tip image{max-width:none}
+
+
+.writing-stroke-number{font-family:Calibri,Arial,sans-serif;font-size:39px;font-weight:900;fill:white;stroke:#082f63;stroke-width:9px;paint-order:stroke;pointer-events:none}
+
+
+.writing-progress{font-family:Calibri,Arial,sans-serif;font-size:18px;font-weight:900;color:#082f63;min-height:28px;margin:12px 0 0}
+
+
+.brush-practice{border:2px solid #92c7e9;border-radius:18px;background:#f8fbff;padding:12px;min-width:0;text-align:center}
+
+
+.brush-practice h3{font-family:KaiTi,STKaiti,"Noto Serif SC",serif;color:#082f63;font-size:26px;margin:0 0 6px}
+
+
+.brush-hint{font-family:Calibri,Arial,sans-serif;color:#082f63;font-size:15px;line-height:1.5;margin-bottom:34px}
+
+
+.brush-hint span{font-size:13px;color:#51687f}
+
+
+.brush-canvas-wrap{position:relative;width:100%;aspect-ratio:1;border:2px solid #bfe8ff;border-radius:12px;background:linear-gradient(90deg,transparent 49.7%,#d7e4f2 49.7%,#d7e4f2 50.3%,transparent 50.3%),linear-gradient(0deg,transparent 49.7%,#d7e4f2 49.7%,#d7e4f2 50.3%,transparent 50.3%),#fff}
+
+
+.brush-canvas-wrap .writing-surface{touch-action:none;cursor:crosshair;position:absolute;inset:0}
+
+
+.brush-status{font-family:Calibri,Arial,sans-serif;color:#082f63;font-weight:900;font-size:15px;min-height:44px;line-height:1.4;margin-top:10px}
+
+
+.brush-clear{margin-top:5px!important;font-size:14px!important;padding:7px 11px!important;min-height:36px!important}
+
+
+.brush-unavailable{padding:30px;font-family:KaiTi,serif;font-size:30px;color:#082f63}
+
+
+@media(max-width:1000px){.write-layout{grid-template-columns:1fr}.write-grid{grid-template-columns:repeat(6,minmax(0,1fr))}.write-demo-row{max-width:760px}}
+
+
+@media(max-width:600px){.write-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.write-demo-row{grid-template-columns:1fr;gap:24px;padding-top:40px}.writing-demo-column{width:min(360px,100%);justify-self:center}.brush-practice{width:min(360px,100%);justify-self:center}.write-meta .fr{font-size:19px}.write-focus{padding:15px}.write-actions button{font-size:15px;padding:10px}}
+
+
+
+
+
+</style><style>.brush-canvas-wrap,.brush-canvas-wrap svg{touch-action:none;user-select:none;-webkit-user-select:none}.brush-practice .writing-surface{overflow:visible}.brush-status{min-height:3em}.brush-hint{line-height:1.5}</style><style>.write-mini{position:relative}.write-audio-icon{position:absolute;right:5px;top:4px;font-size:13px;line-height:1}.write-mini.reading-aloud{box-shadow:0 0 0 3px #168452}.write-mini:focus-visible{outline:3px solid #168452;outline-offset:3px}</style></head><body><header class="top"><div class="bar"><img class="logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMjAgODgiPjxyZWN0IHdpZHRoPSIyMjAiIGhlaWdodD0iODgiIHJ4PSIxNiIgZmlsbD0iIzBiMmY1YiIvPjxyZWN0IHg9IjE1MCIgd2lkdGg9IjcwIiBoZWlnaHQ9Ijg4IiByeD0iMTYiIGZpbGw9IiNlNTIzMmUiLz48dGV4dCB4PSIyNiIgeT0iNTUiIGZvbnQtZmFtaWx5PSJDYWxpYnJpLEFyaWFsIiBmb250LXNpemU9IjM4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmIj5JRlM8L3RleHQ+PHRleHQgeD0iMjAiIHk9Ijc0IiBmb250LWZhbWlseT0iQ2FsaWJyaSxBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iI2Q5ZWNmZiI+SW50ZXJuYXRpb25hbCBGcmVuY2ggU2Nob29sPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iNTYiIGZvbnQtZmFtaWx5PSJLYWlUaSxTVEthaXRpIiBmb250LXNpemU9IjI0IiBmaWxsPSIjZmZmIj7kuK3mloc8L3RleHQ+PC9zdmc+"><div><div class="brand">学而中文 <span class="version-badge">CE2 学生离线版 · 已更新 2026-10-01</span></div><div id="topTitle" class="title"></div></div><div class="top-actions"><button id="full" class="light">⛶ Fullscreen</button></div></div><nav id="nav" class="nav"></nav></header><img class="ifs" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMjAgODgiPjxyZWN0IHdpZHRoPSIyMjAiIGhlaWdodD0iODgiIHJ4PSIxNiIgZmlsbD0iIzBiMmY1YiIvPjxyZWN0IHg9IjE1MCIgd2lkdGg9IjcwIiBoZWlnaHQ9Ijg4IiByeD0iMTYiIGZpbGw9IiNlNTIzMmUiLz48dGV4dCB4PSIyNiIgeT0iNTUiIGZvbnQtZmFtaWx5PSJDYWxpYnJpLEFyaWFsIiBmb250LXNpemU9IjM4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjZmZmIj5JRlM8L3RleHQ+PHRleHQgeD0iMjAiIHk9Ijc0IiBmb250LWZhbWlseT0iQ2FsaWJyaSxBcmlhbCIgZm9udC1zaXplPSIxMiIgZmlsbD0iI2Q5ZWNmZiI+SW50ZXJuYXRpb25hbCBGcmVuY2ggU2Nob29sPC90ZXh0Pjx0ZXh0IHg9IjE2MCIgeT0iNTYiIGZvbnQtZmFtaWx5PSJLYWlUaSxTVEthaXRpIiBmb250LXNpemU9IjI0IiBmaWxsPSIjZmZmIj7kuK3mloc8L3RleHQ+PC9zdmc+"><main id="app"></main><div id="thumbs" class="thumbs">👍</div><div id="win" class="win">你太棒了！</div><script src="lesson-data-1.js"></script>
+<script src="lesson-data-2.js"></script>
+<script src="vocabulary-images-1.js"></script>
+<script src="vocabulary-images-2.js"></script>
+<script src="speaking-scenes-1.js"></script>
+<script src="course-runtime.js"></script><!-- CE2_AUDIO_V2_START -->
+
+<script src="recorded-voices-1.js"></script>
+<script src="recorded-voices-2.js"></script>
+<script src="recorded-voices-3.js"></script>
+<script src="audio-runtime.js"></script>
+
+<!-- CE2_AUDIO_V2_END -->
+
+</body><!-- CE2_FULL_COURSE_UPDATED_2026_07_03 -->
+
+
+<!-- CURRENT_PAGE_REFRESH_READY_2026_07_03 -->
+
+
+<!-- BACK_LINK_TO_MANDARIN_MINI_LMS -->
+
+
+<!-- ALL_TEXTS_BROWSER_ADDED -->
+
+
+<!-- PER_LESSON_GAMES_UPDATED -->
+
+
+<!-- AI_READING_FEEDBACK_UPGRADED -->
+
+
+<!-- AI_POSITIVE_CORRECTION_WORDING -->
+
+
+<!-- WRITING_12_STROKE_ORDER_UPDATED -->
+
+
+<!-- INLINE_QUOTES_REPAIRED -->
+
+
+<!-- READ_BUTTONS_DATA_ACTION_ACTIVE -->
+
+
+<!-- MATCHING_PINYIN_FR_SLASH -->
+
+
+<!-- READ_TOGGLES_VISIBLE_STATE -->
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style id="ce2-publication-responsive">
+/* Keep the poem observation and movement cards within narrow screens. */
+@media(max-width:900px){
+ main .hero[style*="grid-template-columns:1fr 1fr"]{grid-template-columns:minmax(0,1fr)!important}
+ main .grid.three,main .grid.four{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+ main .hero>div{min-width:0}
+}
+</style>
